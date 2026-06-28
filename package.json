@@ -1,0 +1,28 @@
+{
+  "name": "clean-advice-live",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:agent": "cd agent && uv run python src/agent.py dev",
+    "dev:all": "concurrently \"npm run dev\" \"npm run dev:agent\"",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@livekit/components-react": "latest",
+    "@livekit/components-styles": "latest",
+    "livekit-client": "latest",
+    "livekit-server-sdk": "latest",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "concurrently": "latest",
+    "typescript": "latest"
+  }
+}
