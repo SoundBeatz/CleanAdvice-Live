@@ -6,3 +6,11 @@ services:
     env_file:
       - .env.local
     restart: unless-stopped
+
+  agent:
+    build: ./agent
+    env_file:
+      - .env.local
+    restart: unless-stopped
+    depends_on:
+      - web
