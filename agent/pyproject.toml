@@ -1,0 +1,16 @@
+[project]
+name = "clean-advice-live-agent"
+version = "0.1.0"
+description = "Clean360 Clean Advice LiveKit worker"
+requires-python = ">=3.11"
+dependencies = [
+  "python-dotenv",
+  "livekit-agents",
+  "livekit-plugins-openai",
+  "livekit-plugins-deepgram",
+  "livekit-plugins-elevenlabs",
+  "livekit-plugins-noise-cancellation"
+]
+
+[tool.uv]
+package = false
