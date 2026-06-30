@@ -1,0 +1,32 @@
+{
+  "id": "no-water-pickup",
+  "title": "Machine zuigt geen water op",
+  "category": "service",
+  "startQuestion": "Blijft er water achter op de vloer terwijl de machine wel rijdt?",
+  "steps": [
+    {
+      "id": "hose-check",
+      "question": "Is de zuigslang doorgespoeld en vrij van verstopping?",
+      "yesNext": "squeegee-check",
+      "noAdvice": "Spoel de zuigslang door en controleer of er vuil, haar of propjes in zitten."
+    },
+    {
+      "id": "squeegee-check",
+      "question": "Zijn de squeegee rubbers heel, schoon en recht geplaatst?",
+      "yesNext": "float-check",
+      "noAdvice": "Reinig of vervang de squeegee rubbers en controleer of de vloerwisser recht op de vloer staat."
+    },
+    {
+      "id": "float-check",
+      "question": "Kan de vlotter vrij bewegen en is de vuilwatertank goed gesloten?",
+      "yesNext": "vacuum-check",
+      "noAdvice": "Controleer de vlotter en sluit de vuilwatertank correct af."
+    },
+    {
+      "id": "vacuum-check",
+      "question": "Hoor je de zuigmotor duidelijk aangaan?",
+      "yesAdvice": "Als alle controles goed zijn maar het probleem blijft, maak een serviceticket aan.",
+      "noAdvice": "Gebruik de machine niet verder en laat de zuigmotor controleren door service."
+    }
+  ]
+}
