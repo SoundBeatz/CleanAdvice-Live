@@ -1,4 +1,5 @@
 import MvpNavigation from '../../components/MvpNavigation';
+import QuoteForm from '../../components/QuoteForm';
 
 export default function QuotePage() {
   return (
@@ -6,8 +7,8 @@ export default function QuotePage() {
       <section className="panel">
         <div className="badge">Clean Quote</div>
         <h1>Offerte</h1>
-        <p>Deze pagina wordt de offerte-intake van Clean Advice Live.</p>
-        <p>De MVP verzamelt straks contactgegevens, locatie, gebouwtype, vierkante meters, vloertype, frequentie en gewenste startdatum.</p>
+        <p>Vul de basisgegevens in voor een eerste Clean360 offerte-draft.</p>
+        <QuoteForm />
         <MvpNavigation />
       </section>
     </main>
