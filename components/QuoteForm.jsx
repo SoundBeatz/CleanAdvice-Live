@@ -7,7 +7,15 @@ export default function QuoteForm() {
 
   async function submitQuote(event) {
     event.preventDefault();
-    const response = await fetch('/api/quote', { method: 'POST' });
+    const formData = new FormData(event.currentTarget);
+    const payload = Object.fromEntries(formData.entries());
+
+    const response = await fetch('/api/quote', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+
     const data = await response.json();
     setResult(JSON.stringify(data, null, 2));
   }
