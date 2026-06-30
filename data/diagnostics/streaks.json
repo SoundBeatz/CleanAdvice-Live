@@ -1,0 +1,32 @@
+{
+  "id": "streaks",
+  "title": "Machine laat strepen achter",
+  "category": "service",
+  "startQuestion": "Zijn de strepen direct zichtbaar achter de machine?",
+  "steps": [
+    {
+      "id": "rubber-clean",
+      "question": "Zijn de squeegee rubbers schoon en vrij van zand, haren of vuil?",
+      "yesNext": "rubber-damage",
+      "noAdvice": "Maak de squeegee rubbers volledig schoon en verwijder vuil tussen de rubbers."
+    },
+    {
+      "id": "rubber-damage",
+      "question": "Zijn de rubbers heel en niet gescheurd, hard of vervormd?",
+      "yesNext": "alignment",
+      "noAdvice": "Vervang de squeegee rubbers of draai ze indien mogelijk om."
+    },
+    {
+      "id": "alignment",
+      "question": "Staat de squeegee recht en raakt deze de vloer gelijkmatig?",
+      "yesNext": "dosage",
+      "noAdvice": "Stel de squeegee recht af zodat deze gelijkmatig contact maakt met de vloer."
+    },
+    {
+      "id": "dosage",
+      "question": "Wordt er mogelijk te veel reinigingsmiddel gebruikt?",
+      "yesAdvice": "Verlaag de dosering en spoel de vloer eventueel na om residu te verwijderen.",
+      "noAdvice": "Controleer de vloer op oude productopbouw of vettige vervuiling."
+    }
+  ]
+}
