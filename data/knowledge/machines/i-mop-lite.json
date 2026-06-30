@@ -1,0 +1,11 @@
+{
+  "id": "i-mop-lite",
+  "brand": "i-team",
+  "model": "i-mop Lite",
+  "category": "scrubber-dryer",
+  "description": "Compacte professionele schrobzuigmachine voor kleinere ruimtes en dagelijkse vloerreiniging.",
+  "applications": ["kantoren", "kleine winkels", "sanitair", "horeca", "zorg", "gangen"],
+  "parts": ["squeegee", "squeegee rubbers", "zuigslang", "vuilwatertank", "schoonwatertank", "vlotter", "borstel", "accu", "lader"],
+  "commonSignals": ["water blijft liggen", "strepen", "weinig zuiging", "accu snel leeg"],
+  "relatedDiagnostics": ["no-water-pickup", "streaks", "battery-not-charging"]
+}
