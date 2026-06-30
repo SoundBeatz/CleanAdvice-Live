@@ -1,0 +1,11 @@
+{
+  "id": "i-vac-6",
+  "brand": "i-team",
+  "model": "i-vac 6",
+  "category": "vacuum-cleaner",
+  "description": "Professionele stofzuiger voor dagelijks gebruik in commerciële omgevingen.",
+  "applications": ["kantoren", "hotels", "scholen", "zorg", "winkels", "trappenhuizen"],
+  "parts": ["stofzak", "filter", "slang", "zuigbuis", "mondstuk", "kabel", "motor", "deksel"],
+  "commonSignals": ["weinig zuigkracht", "maakt veel lawaai", "stof komt terug", "motor start niet"],
+  "relatedDiagnostics": ["vacuum-low-suction", "vacuum-no-power"]
+}
