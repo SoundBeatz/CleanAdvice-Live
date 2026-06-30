@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { LiveKitRoom, VideoConference } from '@livekit/components-react';
 import '@livekit/components-styles';
+import MvpNavigation from './MvpNavigation';
 
 const WELCOME_VIDEO_URL = 'https://6ammc3n5zzf5ljnz.public.blob.vercel-storage.com/live-clips/liveChatClip-nWKjbzbggExFbsae7MMuvV5iQlhRsz.mp4';
 
@@ -46,6 +47,7 @@ export default function CleanAdviceCall() {
         </div>
         {error && <p className="error">{error}</p>}
         <p className="small">Clean Advice antwoordt in dezelfde taal als de bezoeker.</p>
+        <MvpNavigation />
       </section>
     </main>
   );
