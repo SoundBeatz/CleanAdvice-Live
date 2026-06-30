@@ -1,0 +1,11 @@
+{
+  "id": "i-mop-xl",
+  "brand": "i-team",
+  "model": "i-mop XL",
+  "category": "scrubber-dryer",
+  "description": "Professionele schrobzuigmachine voor harde vloeren.",
+  "applications": ["sportscholen", "scholen", "kantoren", "winkels", "zorg", "horeca"],
+  "parts": ["squeegee", "squeegee rubbers", "zuigslang", "vuilwatertank", "schoonwatertank", "vlotter", "zuigmotor", "borstels", "accu", "lader"],
+  "commonSignals": ["water blijft liggen", "strepen", "weinig zuiging", "borstel draait niet"],
+  "relatedDiagnostics": ["no-water-pickup", "streaks", "brush-not-turning"]
+}
