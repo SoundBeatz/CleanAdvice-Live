@@ -4,6 +4,7 @@ export default function MvpNavigation() {
       <a className="button ghost" href="/">Home</a>
       <a className="button ghost" href="/quote">Quote</a>
       <a className="button ghost" href="/service">Service</a>
+      <a className="button ghost" href="/diagnostics">Diagnostics</a>
       <a className="button ghost" href="/router-test">Router Test</a>
       <a className="button ghost" href="/test-room">Test Room</a>
       <a className="button ghost" href="/status">Status</a>
