@@ -12,11 +12,17 @@ try:
 except Exception:
     lemonslice = None
 
-ROOT_ENV = Path(__file__).resolve().parents[2] / '.env.local'
-PROJECT_ENV = Path(__file__).resolve().parents[3] / '.env.local'
+CURRENT_FILE = Path(__file__).resolve()
+ENV_CANDIDATES = [
+    CURRENT_FILE.parents[1] / '.env.local',
+    CURRENT_FILE.parents[2] / '.env.local',
+    Path.cwd() / '.env.local',
+    Path.cwd().parent / '.env.local',
+]
 
-load_dotenv(ROOT_ENV)
-load_dotenv(PROJECT_ENV)
+for env_file in ENV_CANDIDATES:
+    if env_file.exists():
+        load_dotenv(env_file)
 
 
 class CleanAdviceAgent(Agent):
