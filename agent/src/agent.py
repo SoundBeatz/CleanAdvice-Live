@@ -1,3 +1,5 @@
+from pathlib import Path
+
 from dotenv import load_dotenv
 
 from livekit.agents import Agent, AgentSession, JobContext, WorkerOptions, cli, inference, room_io
@@ -10,7 +12,11 @@ try:
 except Exception:
     lemonslice = None
 
-load_dotenv('../.env.local')
+ROOT_ENV = Path(__file__).resolve().parents[2] / '.env.local'
+PROJECT_ENV = Path(__file__).resolve().parents[3] / '.env.local'
+
+load_dotenv(ROOT_ENV)
+load_dotenv(PROJECT_ENV)
 
 
 class CleanAdviceAgent(Agent):
