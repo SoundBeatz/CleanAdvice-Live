@@ -6,7 +6,7 @@
 cp .env.example .env.local
 ```
 
-Add real values:
+Add real values when testing LiveKit and the video agent:
 
 ```env
 LIVEKIT_URL=
@@ -22,18 +22,10 @@ AGENT_NAME=lemonslice
 npm install
 ```
 
-## 3. Install worker
+## 3. Start frontend only
 
 ```bash
-cd agent
-uv sync
-cd ..
-```
-
-## 4. Run app and worker
-
-```bash
-npm run dev:all
+npm run dev
 ```
 
 Open:
@@ -42,7 +34,51 @@ Open:
 http://localhost:3000
 ```
 
-## 5. Test checklist
+## 4. Frontend route checklist
+
+Open these pages:
+
+```text
+http://localhost:3000/
+http://localhost:3000/status
+http://localhost:3000/test-room
+http://localhost:3000/test
+http://localhost:3000/router-test
+http://localhost:3000/diagnostics
+http://localhost:3000/quote
+http://localhost:3000/service
+```
+
+Check these API routes:
+
+```text
+http://localhost:3000/api/health
+http://localhost:3000/api/diagnostics
+```
+
+## 5. Build check
+
+```bash
+npm run build
+```
+
+GitHub Actions also runs this build on push and pull requests to main.
+
+## 6. Install worker
+
+```bash
+cd agent
+uv sync
+cd ..
+```
+
+## 7. Run app and worker together
+
+```bash
+npm run dev:all
+```
+
+## 8. Video-agent checklist
 
 - Welcome video loads.
 - Start button works.
@@ -55,7 +91,7 @@ http://localhost:3000
 
 ## Known MVP limits
 
-- This is the first local MVP scaffold.
 - LemonSlice plugin availability depends on installed package support.
 - Voice and LLM are starter-safe defaults.
-- Exact LemonSlice dashboard voice may require a separate ElevenLabs plugin setup.
+- Exact LemonSlice dashboard voice may require extra setup.
+- The current diagnostic and router pages are MVP test tools, not final customer UX.
