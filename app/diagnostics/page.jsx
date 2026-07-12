@@ -1,5 +1,5 @@
 import MvpNavigation from '../../components/MvpNavigation';
-import DiagnosticsList from '../../components/DiagnosticsList';
+import DiagnosticRunner from '../../components/DiagnosticRunner';
 
 export default function DiagnosticsPage() {
   return (
@@ -7,8 +7,8 @@ export default function DiagnosticsPage() {
       <section className="panel">
         <div className="badge">Diagnostic Engine</div>
         <h1>Diagnoses</h1>
-        <p>Bekijk de beschikbare diagnosebomen van Clean Advice.</p>
-        <DiagnosticsList />
+        <p>Kies een storing en doorloop de controle stap voor stap.</p>
+        <DiagnosticRunner />
         <MvpNavigation />
       </section>
     </main>
